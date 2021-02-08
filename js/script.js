@@ -17,7 +17,7 @@ $(document).ready(function () {
             $(input).on("keyup", function () {
                 let value = $(this).val().toLowerCase();
                 $('.weather-box').filter(function () {
-                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
+                    $(this).toggle($(this).find('h2').text().toLowerCase().indexOf(value) > -1);
                 });
             });
         })
